@@ -467,6 +467,7 @@ body:not(.user-is-tabbing) a:focus {
     object-fit: cover; /* Make sure the images fill the container without stretching */
     object-position: center; /* Center the image inside the container */
     flex-shrink: 0; /* Prevent images from shrinking or overlapping */
+    left: 100%; /* Start each image off-screen to the right */
     transition: transform 0.5s ease-in-out;
 }
 
