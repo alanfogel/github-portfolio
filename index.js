@@ -41,3 +41,37 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+// Select the image container and the images inside it
+const images = document.querySelectorAll('.gallery-image');
+let currentIndex = 0; // Track the current image index
+
+// Select the buttons
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+// Function to show the current image
+function showImage(index) {
+  // Hide all images
+  images.forEach((image, i) => {
+    image.style.transform = `translateX(-${index * 100}%)`;
+  });
+}
+
+// Add event listener for the "Previous" button
+prevBtn.addEventListener('click', () => {
+  // Decrease the index and loop back to the last image if at the beginning
+  currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+  showImage(currentIndex);
+});
+
+// Add event listener for the "Next" button
+nextBtn.addEventListener('click', () => {
+  // Increase the index and loop back to the first image if at the end
+  currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+  showImage(currentIndex);
+});
+
+// Initial image display (set to the first image)
+showImage(currentIndex);
+

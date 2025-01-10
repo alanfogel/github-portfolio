@@ -439,7 +439,58 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.image-box {
+    position: relative;
+    width: 300px; /* Adjust to your desired width */
+    height: 200px; /* Adjust to your desired height */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* transition: transform 0.5s ease-in-out; */
+}
+
+.gallery-image {
+    width: 100%;
+    height: 766px; /* Set a fixed height for all images */
+    object-fit: cover; /* Make sure the images fill the container without stretching */
+    object-position: center; /* Center the image inside the container */
+    flex-shrink: 0; /* Prevent images from shrinking or overlapping */
+    transition: transform 0.5s ease-in-out;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
 .work__box {
     display: flex;
     align-items: center;
@@ -489,6 +540,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
+    position: relative;
+    flex: 1;
     margin-bottom: var(--gutter-normal);
 }
 

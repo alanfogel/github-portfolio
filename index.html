@@ -41,7 +41,7 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#gameProjects" class="nav__link">Game Projects</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -65,11 +65,54 @@
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
+  <!-- ***** Projects ***** -->
+  <section class="projects" id="projects">
+    <div class="row">
+      <h2>Projects</h2>
+      <div class="work__boxes">
+        <!-- Each div with the work__box class is a project. -->
+        <div class="work__box">
+          <div class="work__image-box" style="margin-right: 10%;">
+            <div class="image-container">
+              <img src="./images/BoardWalk.jpg" class="gallery-image" alt="Image 1">
+              <img src="./images/PiBox.jpg" class="gallery-image" alt="Image 2">
+              <img src="./images/SolarPanels.jpg" class="gallery-image" alt="Image 3">
+            </div>
+            <div class="controls">
+              <button id="prevBtn">&#10094;</button>
+              <button id="nextBtn">&#10095;</button>
+            </div>
+          </div>
 
-    <section class="work" id="work">
+          <div class="work__text">
+            <h3>Sustainability Monitoring with Raspberry Pi</h3>
+            <p>
+              Set up Raspberry Pi devices to monitor environmental conditions, tracking tree swelling and shrinking, 
+              with remote data transmission for year-round sustainability research.
+            </p>
+            <ul class="work__list">
+              <li>Python</li>
+            </ul>
+
+            <div class="work__links">
+              <a href="https://github.com/alanfogel/madlabpi" class="link__text">
+                Visit Site <span>&rarr;</span>
+              </a>
+              <a href="https://github.com/alanfogel/madlabpi" title="View Source Code" target="_blank">
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ***** Game Projects ***** -->
+    <section class="gameProjects" id="gameProjects">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>Game Projects</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
