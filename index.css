@@ -665,3 +665,14 @@ button:hover {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+.video-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-video {
+    width: 100%;
+    max-width: 400px; /* Adjust this value as needed */
+    height: auto;
+  }
