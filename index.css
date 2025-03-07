@@ -669,11 +669,20 @@ button:hover {
 .video-container {
     max-width: 100%;
     margin-bottom: 20px;
-  }
+}
   
-  .gallery-video {
+.gallery-video {
     width: 100%;
     max-width: 600px; /* Adjust this value as needed */
-    min-height: 300px; /* Adjust this value as needed */
+    width: 600px; /* Adjust to your desired width */
+    height: 400px; /* Adjust to your desired height */
     height: auto;
-  }
+}
+
+.work__video {
+    width: 100%;
+    max-width: 600px; /* Adjust this value as needed */
+    width: 600px; /* Adjust to your desired width */
+    height: 400px; /* Adjust to your desired height */
+    height: auto;
+}
