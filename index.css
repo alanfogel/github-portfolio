@@ -673,7 +673,7 @@ button:hover {
   
 .gallery-video {
     width: 100%;
-    max-width: 600px; /* Adjust this value as needed */
+    max-width: 66%; /* Adjust this value as needed */
     width: 600px; /* Adjust to your desired width */
     height: 400px; /* Adjust to your desired height */
     height: auto;
@@ -681,8 +681,8 @@ button:hover {
 
 .work__video {
     width: 100%;
-    max-width: 600px; /* Adjust this value as needed */
-    width: 600px; /* Adjust to your desired width */
-    height: 400px; /* Adjust to your desired height */
+    max-width: 66%; /* Adjust this value as needed */
+    width: 300px; /* Adjust to your desired width */
+    height: 200px; /* Adjust to your desired height */
     height: auto;
 }
