@@ -680,9 +680,7 @@ button:hover {
 }
 
 .work__video {
-    width: 100%;
-    max-width: 66%; /* Adjust this value as needed */
-    width: 300px; /* Adjust to your desired width */
-    height: 200px; /* Adjust to your desired height */
+    width: calc(100% - 2rem); /* Adjust the margin value as needed */
+    max-width: 66%; /* Two-thirds of the page width */
     height: auto;
-}
+  }
