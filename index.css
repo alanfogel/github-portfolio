@@ -674,8 +674,7 @@ button:hover {
   
 .gallery-video {
     width: 100%;
-    max-width: 66%; /* Adjust this value as needed */
-    min-height: 25%;
+    min-height: 200px; /* Adjust this value as needed */
     width: 600px; /* Adjust to your desired width */
     height: 400px; /* Adjust to your desired height */
     height: auto;
