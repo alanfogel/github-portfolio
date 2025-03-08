@@ -521,6 +521,7 @@ button:hover {
 
 .work__text {
     flex: 0 0 30%;
+    margin-bottom: 20px; /* Adjust this value as needed */
 }
 
 .work__list {
@@ -678,9 +679,3 @@ button:hover {
     height: 400px; /* Adjust to your desired height */
     height: auto;
 }
-
-.work__video {
-    width: calc(100% - 2rem); /* Adjust the margin value as needed */
-    max-width: 66%; /* Two-thirds of the page width */
-    height: auto;
-  }
